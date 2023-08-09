@@ -31,6 +31,7 @@ public class Product {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+
 	public String getName() {
 		return name;
 	}
@@ -38,7 +39,7 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public double totalValueInStock() {
 		return quantity * price;
 	}
@@ -51,4 +52,15 @@ public class Product {
 		this.quantity -= quantity;
 	}
 
+	
+	public String toString() {
+		return "Product data: "
+				+name
+				+", $ "
+				+String.format("%.2f", price)
+				+", "
+				+quantity
+				+" units, Total: $ "
+				+String.format("%.2f", totalValueInStock());
+	}
 }

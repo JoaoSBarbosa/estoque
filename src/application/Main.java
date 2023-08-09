@@ -2,7 +2,6 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
-
 import entities.Product;
 
 public class Main {
@@ -23,6 +22,7 @@ public class Main {
 		System.out.print("Quantity in stock: ");
 		product.setQuantity(sc.nextInt());
 		
+		System.out.println(product);
 		sc.close();
 	}
 
