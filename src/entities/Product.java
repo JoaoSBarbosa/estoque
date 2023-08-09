@@ -54,8 +54,7 @@ public class Product {
 
 	
 	public String toString() {
-		return "Product data: "
-				+name
+		return 	name
 				+", $ "
 				+String.format("%.2f", price)
 				+", "
